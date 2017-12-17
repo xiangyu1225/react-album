@@ -14,7 +14,7 @@ imageDatas = (function genImageURL(imageDatasArr) {
 
 		singleImageData.imageURL = require('../images/' + singleImageData.fileName);
 
-		imageDatasArr[i] = singleImageData;  
+		imageDatasArr[i] = singleImageData;
 	}
 
 	return imageDatasArr;
@@ -38,7 +38,7 @@ var ImgFigure = React.createClass({
 		} else {
 			this.props.center();
 		}
-		
+
 		e.stopPropagation();
 		e.preventDefault();
 	},
@@ -215,7 +215,7 @@ var GalleryByReactApp = React.createClass({
 
 		if (imgsArrangeTopArr && imgsArrangeTopArr[0]) {
 			imgsArrangeTopArr.splice(topImgSpliceIndex, 0, imgsArrangeTopArr[0]);
-		}	
+		}
 
 		imgsArrangeArr.splice(centerIndex, 0, imgsArrangeCenterArr[0]);
 
@@ -321,7 +321,7 @@ var GalleryByReactApp = React.createClass({
 	        </section>
 	        <nav className="controller-nav">
 	        	{controllerUnits}
-	        </nav>	
+	        </nav>
 	      </section>
 	    );
   	}
